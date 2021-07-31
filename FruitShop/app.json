@@ -1,0 +1,14 @@
+{
+  "addons": ["heroku-postgresql:hobby-dev"],
+  "description": "FruitShop web platform",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "image": "heroku/nodejs",
+  "name": "FruitShop",
+  "scripts": {
+    "postdeploy": "cd frontend/ && yarn &&& yarn build"
+  }
+}
